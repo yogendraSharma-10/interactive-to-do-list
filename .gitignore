@@ -1,0 +1,55 @@
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnp/
+.pnp.js
+.pnp.cjs
+
+# Environment variables
+# Actual environment files, not the .env.example template.
+# These files contain sensitive information and should not be committed.
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Build artifacts and temporary files
+build/
+dist/
+tmp/
+
+# Client-side (React) specific ignores
+client/node_modules/
+client/build/
+client/.env
+client/.env.local
+client/.env.development.local
+client/.env.test.local
+client/.env.production.local
+
+# Server-side (Node.js) specific ignores
+server/node_modules/
+server/.env
+# Data persistence file for the simple backend.
+# This file is modified at runtime and should not be committed to version control
+# to avoid conflicts and ensure clean state for deployments.
+server/data/tasks.json
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# IDE-specific files and directories
+.vscode/        # Visual Studio Code settings (user-specific)
+.idea/          # IntelliJ IDEA / WebStorm settings
+*.sublime-project
+*.sublime-workspace
+
+# Editor backup files
+*~
+#*#
+*.swp
+*.swo

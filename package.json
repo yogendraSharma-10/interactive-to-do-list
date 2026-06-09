@@ -1,0 +1,37 @@
+```json
+{
+  "name": "interactive-todo-list",
+  "version": "1.0.0",
+  "description": "A classic to-do list application allowing users to add, delete, and mark tasks as complete, with data persistence handled by a simple backend. This project is part of a larger ecosystem, demonstrating integration points with services like the 'Recipe Unit Converter' for potential task-related recipe management, or 'Personal Blog Platform' for sharing productivity tips.",
+  "main": "server/index.js",
+  "private": true,
+  "workspaces": [
+    "client",
+    "server"
+  ],
+  "scripts": {
+    "install-all": "npm install --workspaces",
+    "client": "npm run start --workspace=client",
+    "server": "npm run start --workspace=server",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "start": "npm run server",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "echo \"Linting not configured at root, check client/server workspaces\""
+  },
+  "keywords": [
+    "todo",
+    "list",
+    "react",
+    "nodejs",
+    "javascript",
+    "fullstack",
+    "microservice",
+    "productivity"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
+```
